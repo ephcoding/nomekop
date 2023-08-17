@@ -12,8 +12,8 @@ const classes =
 
 export const PokemonCard = ({ name, url }: CardProps) => {
 	return (
-		<NextLink key={`${name} Card`} href={name} className={classes}>
-			<DaisyCard>
+		<NextLink key={`${name} Card`} href={name}>
+			<DaisyCard className='bg-gradient-to-br from-purple-500 to-green-400'>
 				{/* <DaisyCard.Image src='/' /> */}
 				<DaisyCard.Body>
 					<DaisyCard.Title>{name}</DaisyCard.Title>

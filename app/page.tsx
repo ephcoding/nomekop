@@ -2,18 +2,12 @@ import Image from "next/image";
 
 export default function Home() {
 	return (
-		<main className='flex min-h-screen flex-col items-center justify-between p-24'>
-			<div className='z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex'>
-				<h2>NOMEKOP: Find Your Pokemon</h2>
-			</div>
-
-			<div className='mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left'>
-				<OGCard label='Card 1' description='description 1' href='/' />
-				<OGCard label='Card 2' description='description 2' href='/' />
-				<OGCard label='Card 3' description='description 3' href='/' />
-				<OGCard label='Card 4' description='description 4' href='/' />
-			</div>
-		</main>
+		<div className='mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left'>
+			<OGCard label='Card 1' description='description 1' href='/' />
+			<OGCard label='Card 2' description='description 2' href='/' />
+			<OGCard label='Card 3' description='description 3' href='/' />
+			<OGCard label='Card 4' description='description 4' href='/' />
+		</div>
 	);
 }
 
@@ -23,7 +17,6 @@ type CardOptions = {
 	href: string;
 };
 
-// const OGCard = ({ label, description, href }: CardOptions) => {
 const OGCard = (cardOptions: CardOptions) => {
 	const { label, description, href } = cardOptions;
 

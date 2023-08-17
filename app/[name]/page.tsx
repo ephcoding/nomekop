@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Progress } from "react-daisyui";
+import { ProgressBar } from "components/ProgressBar";
 
 import { getSinglePokemon } from "services/pokeapi";
 import { RemoteImage } from "@/components/RemoteImage";
@@ -34,7 +34,7 @@ export default async function PokemonPage({ params }: PageParams) {
 							<h3 className='p-3 w-2/4'>
 								{statName}: {statValue}
 							</h3>
-							{/* <Progress className='w-2/4 m-auto' value={statValue} /> */}
+							<ProgressBar value={statValue} />
 						</div>
 					);
 				})}

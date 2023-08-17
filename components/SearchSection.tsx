@@ -11,10 +11,7 @@ type SearchOPtions = {
 export function SearchSection({ searchResults }: SearchOPtions) {
 	const [searchText, setSearchText] = useState("");
 
-	console.log(searchResults);
-
 	const searchFilter = (searchResults: any) => {
-		("");
 		return searchResults.filter((pokemon: any) =>
 			pokemon.name.toLowerCase().includes(searchText.toLowerCase())
 		);
@@ -39,7 +36,7 @@ export function SearchSection({ searchResults }: SearchOPtions) {
 			</div>
 			<h3 className='text-3xl pt-12 pb-6 text-center'>Pokemon Collection</h3>
 
-			<div className='mb-32 grid text-center lg:mb-0 lg:grid-cols-3 lg:text-left'>
+			<div className='mb-32 grid gap-4 text-center lg:mb-0 lg:grid-cols-3 lg:text-left'>
 				{filteredResults.map((pokemon: any) => (
 					<PokemonCard
 						key={pokemon.name}

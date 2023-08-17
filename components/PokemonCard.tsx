@@ -13,14 +13,10 @@ const classes =
 export const PokemonCard = ({ name, url }: CardProps) => {
 	return (
 		<NextLink key={`${name} Card`} href={name}>
-			<DaisyCard className='bg-gradient-to-br from-purple-500 to-green-400'>
+			<DaisyCard className='hover:bg-gradient-to-br hover:from-purple-500 hover:to-green-400 hover:scale-110'>
 				{/* <DaisyCard.Image src='/' /> */}
 				<DaisyCard.Body>
 					<DaisyCard.Title>{name}</DaisyCard.Title>
-					<p className='text-xs'>{url}</p>
-					<DaisyCard.Actions>
-						<Button disabled>Dead</Button>
-					</DaisyCard.Actions>
 				</DaisyCard.Body>
 			</DaisyCard>
 		</NextLink>

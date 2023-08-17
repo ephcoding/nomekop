@@ -4,18 +4,20 @@ import { Button, Card as DaisyCard } from "react-daisyui";
 
 type CardProps = {
 	name: string;
+	url: string;
 };
 
 const classes =
 	"group rounded-lg border border-transparent m-3 px-5 py-4 transition-colors dark:border-gray-500 hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30";
 
-export const PokemonCard = ({ name }: CardProps) => {
+export const PokemonCard = ({ name, url }: CardProps) => {
 	return (
 		<NextLink key={`${name} Card`} href={name} className={classes}>
 			<DaisyCard>
-				<DaisyCard.Image src='/' />
+				{/* <DaisyCard.Image src='/' /> */}
 				<DaisyCard.Body>
 					<DaisyCard.Title>{name}</DaisyCard.Title>
+					<p className='text-xs'>{url}</p>
 					<DaisyCard.Actions>
 						<Button disabled>Dead</Button>
 					</DaisyCard.Actions>

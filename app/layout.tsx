@@ -17,7 +17,7 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={inter.className}>
-				<main className='flex min-h-screen flex-col items-center justify-between p-24'>
+				<main className='flex min-h-screen flex-col items-center p-24'>
 					<div className='z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex'>
 						<h2>NOMEKOP: Find Your Pokemon</h2>
 					</div>

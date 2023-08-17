@@ -24,7 +24,7 @@ export function SearchSection({ searchResults }: SearchOPtions) {
 
 	return (
 		<>
-			<h3 className='text-2xl py-6 text-center'>Find For Your Pokemon!</h3>
+			<h3 className='text-2xl py-6 text-center'>Find Your Pokemon!</h3>
 			<div className='grid w-full max-w-sm items-center gap-1.5'>
 				<Form>
 					<Form.Label htmlFor='name'>Pokemon Name</Form.Label>
@@ -41,7 +41,11 @@ export function SearchSection({ searchResults }: SearchOPtions) {
 
 			<div className='mb-32 grid text-center lg:mb-0 lg:grid-cols-3 lg:text-left'>
 				{filteredResults.map((pokemon: any) => (
-					<PokemonCard key={pokemon.name} name={pokemon.name} />
+					<PokemonCard
+						key={pokemon.name}
+						name={pokemon.name}
+						url={pokemon.url}
+					/>
 				))}
 			</div>
 		</>

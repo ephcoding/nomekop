@@ -1,5 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import NextLink from "next/link";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,7 +20,9 @@ export default function RootLayout({
 			<body className={inter.className}>
 				<main className='flex min-h-screen flex-col items-center p-24'>
 					<div className='z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex'>
-						<h2>NOMEKOP: Find Your Pokemon</h2>
+						<NextLink href='/'>
+							<h2>NOMEKOP: Find Your Pokemon</h2>
+						</NextLink>
 					</div>
 					{children}
 				</main>

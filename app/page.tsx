@@ -1,13 +1,9 @@
 import { SearchSection } from "@/components/SearchSection";
+import { getAllPokemon } from "@/services/pokeapi";
 
-export default function Home() {
-	return (
-		<>
-			{/* 
-				1. fetch all pokemon using react-query
-				2. render list of characters 
-			*/}
-			<SearchSection />
-		</>
-	);
+export default async function Home() {
+	const results = await getAllPokemon();
+
+	// return <></>;
+	return <SearchSection searchResults={results} />;
 }

@@ -5,19 +5,22 @@ import { Form, Input } from "react-daisyui";
 import { PokemonCard } from "@/components/PokemonCard";
 
 type SearchOPtions = {
-	searchList?: any;
+	searchResults: any;
 };
 
-export function SearchSection({ searchList }: SearchOPtions) {
+export function SearchSection({ searchResults }: SearchOPtions) {
 	const [searchText, setSearchText] = useState("");
 
-	const searchFilter = (searchList: any) => {
-		return searchList.filter((pokemon: any) =>
+	console.log(searchResults);
+
+	const searchFilter = (searchResults: any) => {
+		("");
+		return searchResults.filter((pokemon: any) =>
 			pokemon.name.toLowerCase().includes(searchText.toLowerCase())
 		);
 	};
 
-	// const filteredResults = searchFilter(searchList);
+	const filteredResults = searchFilter(searchResults);
 
 	return (
 		<>
@@ -37,9 +40,9 @@ export function SearchSection({ searchList }: SearchOPtions) {
 			<h3 className='text-3xl pt-12 pb-6 text-center'>Pokemon Collection</h3>
 
 			<div className='mb-32 grid text-center lg:mb-0 lg:grid-cols-3 lg:text-left'>
-				<PokemonCard name='Name 1' />
-				<PokemonCard name='Name 2' />
-				<PokemonCard name='Name 3' />
+				{filteredResults.map((pokemon: any) => (
+					<PokemonCard key={pokemon.name} name={pokemon.name} />
+				))}
 			</div>
 		</>
 	);

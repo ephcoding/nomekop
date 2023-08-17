@@ -1,6 +1,6 @@
 "use client";
 import NextLink from "next/link";
-import { Card as DaisyCard } from "react-daisyui";
+import { Button, Card as DaisyCard } from "react-daisyui";
 
 type CardProps = {
 	name: string;
@@ -13,7 +13,13 @@ export const PokemonCard = ({ name }: CardProps) => {
 	return (
 		<NextLink key={`${name} Card`} href={name} className={classes}>
 			<DaisyCard>
-				<DaisyCard.Title>{name}</DaisyCard.Title>
+				<DaisyCard.Image src='/' />
+				<DaisyCard.Body>
+					<DaisyCard.Title>{name}</DaisyCard.Title>
+					<DaisyCard.Actions>
+						<Button disabled>Dead</Button>
+					</DaisyCard.Actions>
+				</DaisyCard.Body>
 			</DaisyCard>
 		</NextLink>
 	);

@@ -4,6 +4,8 @@ import NextLink from "next/link";
 import NextImage from "next/image";
 import { Inter } from "next/font/google";
 
+import { Footer } from "components/Footer";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,7 +21,7 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={inter.className}>
-				<main className='flex min-h-screen flex-col items-center p-4'>
+				<main className='flex min-h-screen flex-col items-center justify-between p-4'>
 					<div className='z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex'>
 						<div
 							style={{ position: "relative", height: "100px", width: "200px" }}
@@ -35,6 +37,7 @@ export default function RootLayout({
 						</div>
 					</div>
 					{children}
+					<Footer />
 				</main>
 			</body>
 		</html>

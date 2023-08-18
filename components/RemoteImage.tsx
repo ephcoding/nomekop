@@ -10,7 +10,7 @@ type RemoteImageProps = {
 export const RemoteImage = ({ imageUrl, alt }: RemoteImageProps) => {
 	return (
 		<div
-			className='m-4'
+			className='mx-auto'
 			style={{ position: "relative", width: "300px", height: "300px" }}
 		>
 			<NextImage

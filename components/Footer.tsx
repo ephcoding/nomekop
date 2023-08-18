@@ -1,4 +1,5 @@
 "use client";
+import { ReactNode } from "react";
 import { Footer as DaisyFooter } from "react-daisyui";
 import NextImage from "next/image";
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
@@ -28,6 +29,7 @@ export const Footer = () => {
           <div style={{ position: "relative", width: "28px", height: "28px" }}>
             <Link href="https://ephraimsmith.dev/projects">
               <NextImage
+                alt="ephcoding logo as link to ephraimsmith.dev"
                 src="/ephcoding-150x150-white.png"
                 fill
                 objectFit="contain"
@@ -53,7 +55,12 @@ export const Footer = () => {
   );
 };
 
-const Link = ({ children, href }) => (
+type LinkProps = {
+  children?: ReactNode;
+  href: string;
+};
+
+const Link = ({ children, href }: LinkProps) => (
   <a target="_blank" className="link link-hover" href={href}>
     {children}
   </a>

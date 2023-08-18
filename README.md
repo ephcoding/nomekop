@@ -49,9 +49,21 @@ yarn
 npm install
 ```
 
+run app in dev
+
+```
+yarn dev
+
+// OR
+
+npm run dev
+```
+
 <div id='lessons-learned' align='center'>
   <img alt='readme lessons-learned graphic' src='./assets/readme-lessons-learned.png'>
 </div>
+
+### Using Server Side Components ("use client" directive)
 
 ### Handling Dynamic App Router Page Params
 

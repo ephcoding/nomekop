@@ -14,8 +14,8 @@
   <img alt='readme how-to-use graphic' src='./assets/readme-how-to-use.png'>
 </div>
 
-<div id='issues' align='center'>
-  <img alt='readme issues graphic' src='./assets/readme-issues.png'>
+<div id='lessons-learned' align='center'>
+  <img alt='readme lessons-learned graphic' src='./assets/readme-lessons-learned.png'>
 </div>
 
 <div id='connect' align='center'>

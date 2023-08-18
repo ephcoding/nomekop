@@ -18,6 +18,15 @@ export default async function PokemonPage({ params }: PageParams) {
   // const imageUrl = pokemon.sprites.other["official-artwork"].front_default;
   // const imageUrl = pokemon.sprites.other["official-artwork"].front_shiny;
 
+  const colorMap = {
+    hp: "primary",
+    attack: "secondary",
+    defense: "warning",
+    "special-attack": "info",
+    "special-defense": "error",
+    speed: "success",
+  };
+
   return (
     <>
       <h1 className="text-4xl text-bold pt-4">{name}</h1>
@@ -38,7 +47,7 @@ export default async function PokemonPage({ params }: PageParams) {
               <h3 className="p-3 w-2/4">
                 {statName}: {statValue}
               </h3>
-              <ProgressBar value={statValue} />
+              <ProgressBar value={statValue} color={colorMap[statName]} />
             </div>
           );
         })}

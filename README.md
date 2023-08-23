@@ -75,8 +75,8 @@ npm run dev
 
 **Email:** [ephraimjsmith@gmail.com](mailto:ephraimjsmith@gmail.com)
 
-**LinkedIn:** [ephraimjsmith](https://linkedin.com/in/ephraimjsmith)
+**LinkedIn:** [/in/ephraimsmithdev](https://linkedin.com/in/ephraimsmithdev)
 
 **GitHub:** [ephcoding](https://github.com/ephcoding)
 
-**Twitter:** [\_ephraimsmith](https://twitter.com/_ephraimsmith)
+**Twitter:** [ephraimsmithdev](https://twitter.com/ephraimsmithdev)

@@ -23,7 +23,7 @@ export default async function PokemonPage({ params }: PageParams) {
 
   return (
     <>
-      <h1 className="text-4xl text-bold pt-4">{name}</h1>
+      <h1 className="font-slackey text-4xl text-bold pt-4">{name}</h1>
       <Sprites sprites={pokemon.sprites} />
 
       <h3>Weight: {pokemon.weight}</h3>

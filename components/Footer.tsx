@@ -20,13 +20,13 @@ export const Footer = () => {
       </div>
       <div>
         <DaisyFooter.Title>PokÉxplore App</DaisyFooter.Title>
-        <Link href="mailto:ephraimjsmith@gmail.com">Feedback</Link>
+        <Link href="mailto:pokexplore@ephraimsmith.dev">Feedback</Link>
         <Link href="https://github.com/ephcoding/pokexplore">GitHub Repo</Link>
       </div>
       <div>
         <DaisyFooter.Title>Ephraim Smith</DaisyFooter.Title>
         <div className="flex items-center gap-3">
-          <div style={{ position: "relative", width: "28px", height: "28px" }}>
+          {/* <div style={{ position: "relative", width: "28px", height: "28px" }}>
             <Link href="https://ephraimsmith.dev/projects">
               <NextImage
                 alt="ephcoding logo as link to ephraimsmith.dev"
@@ -36,16 +36,16 @@ export const Footer = () => {
                 priority
               />
             </Link>
-          </div>
+          </div> */}
           <Link href="https://github.com/ephcoding">
             <FaGithub size={30} />
           </Link>
           <Link href="https://twitter.com/ephraimsmithdev">
             <FaTwitter size={30} />
           </Link>
-          <Link href="https://instagram.com/ephraimsmithdev">
+          {/* <Link href="https://instagram.com/ephraimsmithdev">
             <FaInstagram size={30} />
-          </Link>
+          </Link> */}
           <Link href="https://linkedin.com/in/ephraimsmithdev">
             <FaLinkedin size={30} />
           </Link>
